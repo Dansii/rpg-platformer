@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="70" tileheight="70" infinite="0" nextlayerid="4" nextobjectid="75">
+ <editorsettings>
+  <export target="level3.tmx" format="tmx"/>
+ </editorsettings>
+ <tileset firstgid="1" name="tiles_spritesheet" tilewidth="70" tileheight="70" spacing="2" tilecount="156" columns="12">
+  <image source="../../../../../../../../Downloads/спрайты/tiles_spritesheet.png" width="914" height="936"/>
+ </tileset>
+ <layer id="1" name="Tile Layer 1" width="20" height="15">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,129,104,105,
+0,0,0,0,129,104,104,104,104,104,105,0,0,0,0,0,114,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,137,0,0,0,0,0,0,0,0,0,0,0,126,101,102,0,0,0,0,
+0,0,0,126,102,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,126,102,0,0,0,0,0,0,0,0,0,126,102,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,145,0,0,0,126,102,0,0,0,0,
+0,0,0,0,0,0,0,0,126,101,101,102,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,133,0,0,0,0,0,0,0,0,0,0,0,26,70,26,
+0,0,0,0,133,133,0,0,0,0,0,0,0,0,0,0,0,0,82,0,
+116,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,104,92
+</data>
+ </layer>
+ <objectgroup id="3" name="Object Layer 1">
+  <object id="1" type="ground" x="0" y="980.004" width="1400" height="70"/>
+  <object id="2" type="door" x="1260" y="870" width="70" height="110"/>
+  <object id="3" type="ground" x="350" y="840" width="70" height="140"/>
+  <object id="4" type="ground" x="280" y="910" width="70" height="70"/>
+  <object id="5" type="ground" x="560" y="700" width="280" height="70"/>
+  <object id="6" type="ground" x="700" y="630" width="70" height="70"/>
+  <object id="7" type="ground" x="980" y="630" width="140" height="70"/>
+  <object id="8" type="ground" x="1190" y="490" width="140" height="70"/>
+  <object id="9" type="ground" x="420" y="490" width="140" height="70"/>
+  <object id="10" type="ground" x="210" y="350" width="140" height="70"/>
+  <object id="11" type="ground" x="910" y="280" width="210" height="70"/>
+  <object id="12" type="ground" x="70" y="280" width="70" height="70"/>
+  <object id="13" type="ground" x="280" y="140" width="490" height="70"/>
+  <object id="15" name="key" type="key" x="1330" y="0" width="70" height="70"/>
+  <object id="60" name="potion" type="potion" x="70" y="210" width="70" height="70">
+   <properties>
+    <property name="unitsOfHealth" type="int" value="50"/>
+   </properties>
+  </object>
+  <object id="62" name="enemy" type="enemy" x="490" y="420" width="70" height="70">
+   <properties>
+    <property name="health" type="int" value="100"/>
+    <property name="movingRight" type="bool" value="true"/>
+    <property name="patrolEndX" type="int" value="560"/>
+   </properties>
+  </object>
+  <object id="71" name="enemy" type="enemy" x="980" y="560" width="70" height="70">
+   <properties>
+    <property name="health" type="int" value="100"/>
+    <property name="movingRight" type="bool" value="false"/>
+    <property name="patrolEndX" type="int" value="1050"/>
+   </properties>
+  </object>
+  <object id="72" name="enemy" type="enemy" x="980" y="910" width="70" height="70">
+   <properties>
+    <property name="health" type="int" value="100"/>
+    <property name="movingRight" type="bool" value="true"/>
+    <property name="patrolEndX" type="int" value="1120"/>
+   </properties>
+  </object>
+  <object id="67" name="enemy" type="enemy" x="1050" y="210" width="70" height="70">
+   <properties>
+    <property name="health" type="int" value="100"/>
+    <property name="movingRight" type="bool" value="true"/>
+    <property name="patrolEndX" type="int" value="1190"/>
+   </properties>
+  </object>
+  <object id="70" name="sword" type="sword" x="1190" y="420" width="70" height="70">
+   <properties>
+    <property name="damage" type="int" value="35"/>
+   </properties>
+  </object>
+  <object id="69" name="enemy" type="enemy" x="1190" y="0" width="70" height="70">
+   <properties>
+    <property name="health" type="int" value="100"/>
+    <property name="movingRight" type="bool" value="false"/>
+    <property name="patrolEndX" type="int" value="1330"/>
+   </properties>
+  </object>
+  <object id="68" name="enemy" type="enemy" x="420" y="70" width="70" height="70">
+   <properties>
+    <property name="health" type="int" value="100"/>
+    <property name="movingRight" type="bool" value="false"/>
+    <property name="patrolEndX" type="int" value="560"/>
+   </properties>
+  </object>
+  <object id="73" type="ground" x="1190" y="70" width="210" height="70"/>
+  <object id="74" name="ground" type="ground" x="1120" y="140" width="70" height="70"/>
+ </objectgroup>
+</map>
